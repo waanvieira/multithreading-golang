@@ -15,7 +15,7 @@ func worker(workerId int, data <-chan int) {
 	}
 }
 
-// O main é a 1° thread que o go já cria
+// O main é a 1° thread que é criada no inicio da aplicação
 func main() {
 	// Declaramos o nosso canal que vai ser executado
 	data := make(chan int)
